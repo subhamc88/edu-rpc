@@ -7,7 +7,7 @@ def send_request(method, *args):
 
     # Create a socket
     client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    client.connect(('localhost', 8080))
+    client.connect(('localhost', 1331))
 
     # Prepare the request
     request = json.dumps([method] + list(args))
