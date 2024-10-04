@@ -23,5 +23,8 @@ def send_request(method, *args):
 
 if __name__ == "__main__":
     print("Connection to Server")
-    print("Adding 10 and 5:", send_request("add", 10, 5))
-    print("Subtracting 10 and 5:", send_request("sub", 10, 5))
+    print("Adding 10 and 10:", send_request("add", 10, 10))
+    print("Subtracting 10 and 10:", send_request("sub", 10, 10))
+    print("Multiplying 10 and 10:", send_request("multiply", 10, 10))
+    print("Dividing 10 and 10:", send_request("quotient", 10, 10))
+    print("Finding Remainder between 10 and 10:", send_request("remainder", 10, 10))
