@@ -21,6 +21,27 @@ def sub(x, y):
     return x - y
 
 
+def multiply(x, y):
+    '''
+    Function for subtraction.
+    '''
+    return x * y
+
+
+def quotient(x, y):
+    '''
+    Function for subtraction.
+    '''
+    return x / y
+
+
+def remainder(x, y):
+    '''
+    Function for subtraction.
+    '''
+    return x % y
+
+
 # Handlers #
 
 
@@ -43,6 +64,12 @@ def client_connection_handler(client_socket):
             response = add(*args)
         elif method == "sub":
             response = sub(*args)
+        elif method == "multiply":
+            response = multiply(*args)
+        elif method == "quotient":
+            response = quotient(*args)
+        elif method == "remainder":
+            response = remainder(*args)
         else:
             response = "Method invalid."
 
@@ -58,7 +85,7 @@ def client_connection_handler(client_socket):
 # Server Setup #
 
 
-def run_server(host='localhost', port=8080):
+def run_server(host='localhost', port=1331):
     '''
     Function to run the server.
     '''
