@@ -11,7 +11,7 @@ python server.py
 ```
 
 By default server is configured to run on hostname 'localhost' and port number "1331"
-access the server from any tool at [locahost:1331](localhost:1331).
+access the server from any tool at [locahost:1331](https://localhost:1331).
 Let the server running.
 
 ### RPC Client
